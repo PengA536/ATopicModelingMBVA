@@ -35,19 +35,27 @@ The model is evaluated on three publicly available datasets:
 1. Preprocess Data:
    ```bash
    python src/preprocess.py
+   ```
 Update the dataset name and path in preprocess.py as needed.
+
 2. Train VAE-TOPIC:
    ```bash
    python src/train.py
+   ```
 Specify the dataset name and number of topics in train.py.
+
 3. Evaluate Model:
    ```bash
    python src/evaluate.py
+   ```
 Provide true and predicted labels for evaluation.
+
 4. Visualize Results:
    ```bash
    python src/visualize.py
+   ```
 Generates t-SNE plots and word clouds saved in the results/ directory.
+
 ## Code Structure
 * data/: Directory for storing datasets.
 * src/preprocess.py: Data preprocessing (tokenization, stop word removal, vectorization).
